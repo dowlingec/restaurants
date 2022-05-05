@@ -3,7 +3,10 @@ class Restaurant < ActiveRecord::Base
     has_many :customers, through: :reviews
 
     def fanciest
-        puts 'These are not the methods you are looking for'
+        # puts 'These are not the methods you are looking for'
+        #maps over prices of each restaurant
+        #reuturns one whole instance (highest price)
+        self.price.map
     end
 
     def all_reviews
