@@ -7,15 +7,22 @@ class Customer < ActiveRecord::Base
     end
 
     def favorite_restaurant
-        puts "iterates over review star ratings, returns name of highest"
+        puts "iterates over review.star_ratings, returns name of highest star rating"
         self.reviews.map do |review|
-            "Rating of this rastaurant is:  #{review.star_rating}"
+            review.star_rating
         end
+        # getting value of each rating
+        # need to find max from that array
+        #then return the name of the restaurant which has max stars
     end
 
-    def add_review
-        puts 'These are not the methods you are looking for'
+    def add_review(restaurant_id, rating)
+        # puts 'creates new Review - takes a restaurant instance and star_rating'
+        Review.create(restaurant_id: restaurant_id, star_rating: rating, customer_id: self.id)
+        #takes in params of restaurant and rating
+        #Review.create
     end
+
 
     def delete_reviews
         puts 'These are not the methods you are looking for'
