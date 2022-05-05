@@ -26,7 +26,8 @@ class Customer < ActiveRecord::Base
 
     def delete_reviews(restaurant_id)
         puts 'These are not the methods you are looking for'
-        Restaurant.review
+        Restaurant.reviews.
+        
         #takes restaurant id
         #removes all reviews linked to the id
         #deleteing rows from table ?
