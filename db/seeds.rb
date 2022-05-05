@@ -21,7 +21,7 @@ rev1 = Review.create(star_rating: 3, restaurant_id: bistro.id, customer_id: posh
 rev2 = Review.create(star_rating: 4, restaurant_id: shack.id, customer_id: sporty_spice.id)
 rev3 = Review.create(star_rating: 2, restaurant_id: palace.id, customer_id: scary_spice.id)
 rev4 = Review.create(star_rating: 5, restaurant_id: palace.id, customer_id: ginger_spice.id)
-rev4 = Review.create(star_rating: 4, restaurant_id: bistro.id, customer_id: baby_spice)
+rev4 = Review.create(star_rating: 4, restaurant_id: bistro.id, customer_id: baby_spice.id)
 # ********************************************************************
 # * TODO: create reviews! Remember, a review belongs to a restaurant *
 # * and a review belongs to a customer.                              *
